@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Pokemon from '../components/Pokemon';
 import pokemonList from '../data';
 
-describe.skip('1 - Crie o componente `<Pokemon />`', () => {
+describe('1 - Crie o componente `<Pokemon />`', () => {
   it('Será verificado se o componente possui a tag `li` envolvendo seu conteúdo', () => {
     const pikachuInfo = pokemonList[0];
     render(<Pokemon pokemon={pikachuInfo} />);

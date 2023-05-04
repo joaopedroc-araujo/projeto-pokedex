@@ -3,7 +3,7 @@ import App from '../App';
 import Pokedex from '../components/Pokedex';
 import pokemonList from '../data';
 
-describe.skip('3 - Renderize uma lista com as informações de cada pokémon', () => {
+describe('3 - Renderize uma lista com as informações de cada pokémon', () => {
   it('Será validado se o componente `<Pokedex />` renderiza a quantidade correta de elementos', () => {
     render(<Pokedex pokemonList={pokemonList} />);
     const pokemonCards = screen.getAllByRole("listitem");
