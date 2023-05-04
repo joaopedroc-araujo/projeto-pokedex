@@ -13,8 +13,8 @@ describe('3 - Renderize uma lista com as informações de cada pokémon', () => 
 
   it('Será validado se todos os elementos da lista são renderizados', () => {
     render(<App />);
-    
-    pokemonList.forEach(({name}) => {
+
+    pokemonList.forEach(({ name }) => {
       expect(screen.getByText(name)).toBeInTheDocument();
     });
   })
