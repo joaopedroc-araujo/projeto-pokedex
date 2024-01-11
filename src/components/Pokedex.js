@@ -5,11 +5,17 @@ import Pokemon from './Pokemon';
 
 function Pokedex({ pokemonList }) {
   return (
-    <div>
+    <div style={ { textAlign: 'center' } }>
       <h1>Pokédex</h1>
-      <ul data-testid="my-action">
+      <ul
+        data-testid="my-action"
+        style={ { display: 'flex', flexWrap: 'wrap', padding: 0, listStyleType: 'none' } }
+      >
         {pokemonList.map((pokemon) => (
-          <Pokemon key={ pokemon.id } pokemon={ pokemon } />
+          <Pokemon
+            key={ pokemon.id }
+            pokemon={ pokemon }
+          />
         ))}
       </ul>
     </div>

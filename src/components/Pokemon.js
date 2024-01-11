@@ -8,7 +8,21 @@ class Pokemon extends Component {
     const { id, name, type, averageWeight, image } = pokemon;
 
     return (
-      <li data-testid="my-action" key={ id }>
+      <li
+        data-testid="my-action"
+        key={ id }
+        style={ {
+          border: '1px solid',
+          borderRadius: '8px',
+          margin: '10px',
+          padding: '10px',
+          width: '30%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        } }
+      >
         <h2>{name}</h2>
         <p>{type}</p>
         <p>
@@ -16,7 +30,7 @@ class Pokemon extends Component {
           {' '}
           {averageWeight.measurementUnit}
         </p>
-        <img src={ image } alt={ name } />
+        <img src={ image } alt={ `${name} sprite` } />
       </li>
     );
   }

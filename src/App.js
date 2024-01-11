@@ -6,12 +6,11 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <>
-        <h1>Exercise - Pokedex</h1>
+      <div>
         <ul>
           <Pokedex pokemonList={ pokemonList } />
         </ul>
-      </>
+      </div>
     );
   }
 }
